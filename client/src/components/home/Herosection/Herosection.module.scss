@@ -1,0 +1,94 @@
+.heroGradient {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #f0f7ff 35%,
+    #e9f0ff 70%,
+    #f7ecff 100%
+  );
+}
+
+/* Title Styling */
+.heroTitle {
+  // font-weight: 800;
+  // line-height: 1.15;
+}
+
+/* Beautiful Gradient Text */
+.gradientText {
+  // background: linear-gradient(90deg, #ff5f6d, #ffc371);
+  background: linear-gradient(50deg, #ff5f6d, #1a73e8);
+  -webkit-background-clip: text;
+  color: transparent;
+  // color: #D73A32;
+}
+
+/* Subtext */
+.heroSubtitle {
+  color: #555;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* Black Button */
+.btnDark {
+  background: #000;
+  background: linear-gradient(90deg, #ff5f6d, #ffc371);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 35px;
+  font-weight: 600;
+  transition: 0.25s;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    background: #222;
+    transform: translateY(-2px);
+  }
+}
+
+/* White Button */
+.btnLight {
+  color: #000;
+  padding: 12px 32px;
+  border-radius: 35px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.25s;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+}
+
+.btnDark {
+  &::before {
+    content: "";
+    // width: 0;
+    // height: 3em;
+    width: 0;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    //   background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    background: linear-gradient(90deg, #fd0100, #ffc371);
+
+    transition: 0.5s ease;
+    display: block;
+    z-index: -1;
+  }
+
+  button:hover::before {
+    width: 100%;
+  }
+}
