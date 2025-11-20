@@ -103,7 +103,7 @@ export default function index() {
         </div>
 
         {/* FAQ Accordion */}
-        <div className="max-w-2xl w-full mx-auto">
+        <div className="max-w-3xl w-full mx-auto">
           {filteredFaqs.length === 0 && (
             <p className="text-center text-gray-500">No FAQs found.</p>
           )}
@@ -111,7 +111,7 @@ export default function index() {
             <div key={faq.question} className="mb-5">
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full bg-gray-100 border border-gray-300 shadow-sm text-left px-5 py-4 font-semibold flex justify-between items-center rounded-xl focus:outline-none"
+                className="w-full glaccybg border border-gray-300 shadow-sm text-left px-5 py-4 font-semibold flex justify-between items-center rounded-xl focus:outline-none"
               >
                 {faq.question}
                 <span
@@ -123,7 +123,7 @@ export default function index() {
                 </span>
               </button>
               {openIndex === i && (
-                <div className="bg-white border-x border-b border-gray-300 rounded-b-xl px-5 pb-4 text-sm text-gray-700 shadow">
+                <div className="bg mt-2 border-x border-b border-gray-300 rounded-xl px-5 p-4 text-sm text-gray-700 shadow">
                   {faq.answer}
                 </div>
               )}
