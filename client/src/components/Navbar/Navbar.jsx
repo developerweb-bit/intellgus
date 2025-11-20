@@ -352,7 +352,7 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/faqs"
+                  href="/faq"
                   className="block w-full p-2 rounded hover:bg-gray-100 hover:text-black"
                 >
                   FAQ&apos;s

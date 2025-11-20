@@ -1,0 +1,26 @@
+// .cursorline {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 2px;
+//   height: 40px; /* line length */
+//   background: #00eaff; /* line color */
+//   pointer-events: none;
+//   transform: translate(-50%, -50%);
+//   transition: transform 0.08s linear; /* smooth follow */
+//   z-index: 9999;
+// }
+
+
+.cursorguide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2px;          /* line thickness */
+  height: 100vh;       /* full height */
+  background: #00eaff; /* line color */
+  pointer-events: none;
+  transform: translateX(-50%);
+  transition: transform 0.05s linear;
+  z-index: 9999;
+}
