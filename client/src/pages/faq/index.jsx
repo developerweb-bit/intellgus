@@ -73,7 +73,7 @@ export default function index() {
         </div>
 
         {/* Search Bar */}
-        <div className="max-w-3xl w-full mx-auto mt-10 mb-7">
+        <div className="max-w-2xl w-full mx-auto mt-10 mb-7">
           <input
             type="text"
             value={search}
@@ -84,26 +84,26 @@ export default function index() {
         </div>
 
         {/* Categories */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mb-12 w-full max-w-3xl">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mb-12 w-full max-w-2xl">
           {categories.map((cat) => (
             <div
               key={cat.label}
               className="flex items-center justify-start gap-2 bg-white border border-gray-200 rounded-full p-2 shadow-sm hover:shadow-lg transition"
             >
-              <span className="glaccybg p-2 bg-gray-900  rounded-full  font-bold ">
+              <span className="glaccybg p-4 bg-gray-900  rounded-full  font-bold ">
                 {cat.icon}
               </span>
 
-              <span className="font-semibold text-[12px] opacity-75 text-gray-500">
+              <span className="font-semibold text-[14px] opacity-75 ">
                 {cat.label} <br />
-                {cat.articleCount}
+              <span className="text-gray-500">  {cat.articleCount}</span>
               </span>
             </div>
           ))}
         </div>
 
         {/* FAQ Accordion */}
-        <div className="max-w-3xl w-full mx-auto">
+        <div className="max-w-2xl w-full mx-auto">
           {filteredFaqs.length === 0 && (
             <p className="text-center text-gray-500">No FAQs found.</p>
           )}

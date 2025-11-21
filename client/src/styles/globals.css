@@ -48,6 +48,7 @@ body {
     #e9f0ff 70%,
     #f7ecff 100%
   ); */
+
   background: linear-gradient(
     to bottom,
     #ffffff 0%,
@@ -58,7 +59,7 @@ body {
 }
 
 .globbg {
-background: linear-gradient(
+  background: linear-gradient(
     to bottom,
     #ffffff 0%,
     #f0f7ff 35%,
@@ -88,29 +89,29 @@ li {
   color: transparent;
 }
 
+button {
+  cursor: pointer;
+}
 
-
-
-.glaccybg{
+.glaccybg {
   /* From https://css.glass */
-background: rgba(255, 255, 255, 0.2);
-/* border-radius: 16px; */
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .glass-card {
-  width: 240px;
-  height: 360px;
+  /* width: 240px;
+  height: 360px; */
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.1),
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.5),
     inset 0 -1px 0 rgba(255, 255, 255, 0.1),
     inset 0 0 12px 6px rgba(255, 255, 255, 0.6);
@@ -119,7 +120,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .glass-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -134,7 +135,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .glass-card::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;

@@ -8,8 +8,13 @@ export default function Document() {
         rel="stylesheet"
       />
       <Head />
-      <body className="antialiased">
-        
+      <body
+        // style={{
+        //   background:
+        //     "linear-gradient(to bottom, #ffffff 0%, #f0f7ff 35%, #e9f0ff 70%, #f7ecff 100%)",
+          
+        // }}
+      >
         <Main />
         <NextScript />
       </body>
