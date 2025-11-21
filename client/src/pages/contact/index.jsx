@@ -19,7 +19,15 @@ export default function index() {
   const [fileName, setFileName] = useState("");
   const fileInputRef = useRef(null);
 
-  const services = ["Consulting", "Design", "Engineering", "Strategy"];
+  // const services = ["Consulting", "Design", "Engineering", "Strategy"];
+  const services = [
+    "Audit",
+    "Virtual CFO",
+    "Tax Resolution",
+    "Payroll Management",
+    "Bookkeeping & Accounting",
+    "Tax Planning & Preparation",
+  ];
   const budgets = ["Less than $10K", "$10K - $50K", "More than $50K"];
 
   const validate = () => {
@@ -331,7 +339,7 @@ export default function index() {
               <div className="p-10 md:pl-14 md:pr-8 lg:pl-20 lg:pr-12 overflow-hidden ">
                 <div
                   ref={boxRef}
-                  className="rounded-xl border relative overflow-hidden h-full p-6 pb-10 bg-gradient-to-br from-blue-50 via-white to-blue-50 flex flex-col justify-between items-start"
+                  className="rounded-xl  relative overflow-hidden h-full p-6 pb-10 bg-gradient-to-br from-blue-50 via-white to-blue-50 flex flex-col justify-between items-start"
                   aria-hidden="false"
                 >
                   <canvas
@@ -460,9 +468,9 @@ export default function index() {
                   onDragOver={(e) => e.preventDefault()}
                 >
                   {/* Service & Budget */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <div className="grid grid-cols-1 md:grid-cols-1  gap-6 ">
+                    <div className="">
+                      <label className="block text-sm  font-medium text-gray-700 mb-2">
                         Service
                       </label>
                       <div className="flex flex-wrap gap-2">
