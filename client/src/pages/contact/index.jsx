@@ -114,6 +114,7 @@ export default function index() {
   // popup flow code here
   // const [hover, setHover] = useState(false);
 
+  
   // const handleMove = (e) => {
   //   const box = document.getElementById("hoverBox");
   //   const spot = document.getElementById("cursorSpot");
@@ -474,7 +475,7 @@ export default function index() {
                   ref={boxRef}
                   className="rounded-xl  relative overflow-hidden h-full p-6 pb-10 bg-gradient-to-br from-blue-50 via-white to-blue-50 flex flex-col justify-between items-start"
                   aria-hidden="false"
-                  style={{backdropFilter: "blur(11px)"}}
+                  style={{ backdropFilter: "blur(11px)" }}
                 >
                   <canvas
                     ref={canvasRef}
